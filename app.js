@@ -5,7 +5,7 @@ const file=require('fs');
 const Port=3000;
 const cors = require('cors');
 app.use(cors());
-app.get('/sign-in',(req,res)=>{
+app.get('/',(req,res)=>{
     const path1=path.join(__dirname,'/Formapi/formData.json');
     let gdata=file.readFileSync(path1,'utf-8');
     res.statusCode=200;
